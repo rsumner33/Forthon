@@ -60,6 +60,11 @@ if sys.hexversion < 0x03000000:
 elif sys.hexversion >= 0x03000000:
     Forthonroot = 'Forthon3'
 
+if sys.hexversion < 0x03000000:
+    Forthonroot = 'Forthon'
+elif sys.hexversion >= 0x03000000:
+    Forthonroot = 'Forthon3'
+
 # --- Normally, the package building script is called Forthon, but on Windows,
 # --- it works better if it is called Forthon.py.
 if sys.platform == 'win32':
